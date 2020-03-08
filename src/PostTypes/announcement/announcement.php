@@ -77,7 +77,7 @@ class AnnouncementPostType {
             return $pid;
         }
 
-        if(isset($_POST["announcement_option_show_global"])) {
+        if(isset($_POST["metabox_announcement_options"])) {
             $announcement_option_show_global = $_POST["announcement_option_show_global"];
 
             update_post_meta($pid, "announcement_option_show_global", $announcement_option_show_global);
